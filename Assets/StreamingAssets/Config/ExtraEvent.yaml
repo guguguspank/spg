@@ -1,0 +1,11 @@
+# 额外事件（可能包含大圈元素）配置文件
+---
+-
+  Name: GGggg希望你能和他一起练习自抽手法
+  Desc: 使用主指定的方式进行DIY，数量为${num}。
+  Method: test
+  Args: 
+    min: 20
+    max: 200
+  Weight: 100
+...

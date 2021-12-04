@@ -1,0 +1,140 @@
+# 工具配置文件
+---
+-
+  Name: 手
+  Desc: 姐姐温暖的手掌
+  MinCount: 1
+  MaxCount: 32
+  Weight: 50
+  Tag: 
+    - sp
+    - diy
+    - otk
+-
+  Name: 小红
+  Desc: 小号
+  MinCount: 20
+  MaxCount: 40
+  Weight: 50
+  Tag: 
+    - sp
+    - diy
+    - otk
+-
+  Name: 小红
+  Desc: 大号
+  MinCount: 1
+  MaxCount: 20
+  Weight: 50
+  Tag: 
+    - sp
+    - diy
+    - otk
+-
+  Name: 小绿
+  Desc: 
+  MinCount: 20
+  MaxCount: 30
+  Weight: 50
+  Tag: 
+    - sp
+    - diy
+    - otk
+-
+  Name: 藤条
+  Desc: 6-10mm
+  MinCount: 15
+  MaxCount: 25
+  Weight: 50
+  Tag: 
+    - sp
+-
+  Name: 藤条
+  Desc: 10-14mm
+  MinCount: 5
+  MaxCount: 15
+  Weight: 50
+  Tag: 
+    - sp
+-
+  Name: 戒尺
+  Desc: 紫光檀
+  MinCount: 10
+  MaxCount: 20
+  Weight: 50
+  Tag: 
+    - sp
+-
+  Name: 猫爪拍
+  Desc: 硅胶
+  MinCount: 15
+  MaxCount: 30
+  Weight: 50
+  Tag: 
+    - sp
+    - otk
+    - diy
+-
+  Name: 猫爪拍
+  Desc: 紫光檀
+  MinCount: 10
+  MaxCount: 20
+  Weight: 50
+  Tag: 
+    - sp
+    - otk
+    - diy
+-
+  Name: 小拍子
+  Desc: 紫光檀
+  MinCount: 10
+  MaxCount: 20
+  Weight: 50
+  Tag: 
+    - sp
+    - otk
+    - diy
+-
+  Name: 小拍子
+  Desc: 亚克力
+  MinCount: 20
+  MaxCount: 40
+  Weight: 50
+  Tag: 
+    - sp
+    - diy
+    - otk
+-
+  Name: 树脂棍
+  Desc: 9mm
+  MinCount: 15
+  MaxCount: 25
+  Weight: 50
+  Tag: 
+    - sp
+-
+  Name: 树脂棍
+  Desc: 10mm
+  MinCount: 5
+  MaxCount: 15
+  Weight: 50
+  Tag: 
+    - sp
+-
+  Name: 热熔胶
+  Desc: 10mm
+  MinCount: 10
+  MaxCount: 40
+  Weight: 50
+  Tag: 
+    - sp
+    - diy
+-
+  Name: 皮带
+  Desc: 
+  MinCount: 10
+  MaxCount: 25
+  Weight: 50
+  Tag: 
+    - sp
+...

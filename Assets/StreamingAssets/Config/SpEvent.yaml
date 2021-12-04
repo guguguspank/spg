@@ -1,0 +1,207 @@
+# 特殊事件配置文件
+---
+-
+  Name: GGggg希望你能和他一起练习自抽手法
+  Desc: 使用${tool}按照${position}的姿势进行DIY，数量为${num}。
+  Method: Sp
+  Args: 
+    mode: diy
+  Weight: 100
+-
+  Name: Genecro认为你需要更多的DIY练习
+  Desc: 使用${tool}按照${position}的姿势进行DIY，数量为${num}。
+  Method: Sp
+  Args: 
+    mode: diy
+  Weight: 50
+-
+  Name: linu希望你能学习GGggg进行一次请罚
+  Desc: 向主请求使用${tool}并使用${position}姿势打${num}下（请罚词至少80字）。
+  Method: Sp
+  Args: 
+  Weight: 100
+-
+  Name: JayZ觉得你的主需要点一份外卖
+  Desc: 对主说“你没吃饭吗？”，并收获${num}下${tool}，姿势为${position}。
+  Method: Sp
+  Args: 
+  Weight: 50
+-
+  Name: Amanda希望你的主能够多多练习藤条的使用技巧
+  Desc: 获得${num}下藤条。
+  Method: GainNumber
+  Args: 
+    min: 20
+    max: 50
+  Weight: 50
+-
+  Name: Virtuoso又瞒着姐姐熬夜打游戏被发现了，现在把你拉去顶包
+  Desc: 获得${num}下小绿。
+  Method: GainNumber
+  Args: 
+    min: 30
+    max: 50
+  Weight: 50
+-
+  Name: GGggg晚上又饿了，但是找不到吃的，心情烦躁，拉上你开始自抽
+  Desc: 使用主指定的方式进行DIY，数量为${num}。
+  Method: GainNumber
+  Args: 
+    min: 100
+    max: 200
+  Weight: 100
+-
+  Name: Zara想看你被小红抽一顿
+  Desc: 获得${num}下小红。
+  Method: GainNumber
+  Args: 
+    min: 40
+    max: 60
+  Weight: 50
+-
+  Name: 尼小诺咕咕咕了，并把责任推到你身上
+  Desc: 获得${num}下藤条。
+  Method: GainNumber
+  Args: 
+    min: 10
+    max: 50
+  Weight: 50
+-
+  Name: 你参加了火球的绘画班，第二天就没完成作业，被杀鸡儆猴
+  Desc: 获得${num}下树脂棍。
+  Method: GainNumber
+  Args: 
+    min: 30
+    max: 50
+  Weight: 50
+-
+  Name: genecro在考前带你去通宵，第二天你缺考，上了姐姐的死亡名单
+  Desc: 由主选择两件工具，自己选择一件工具，各打60下。
+  Method: NoHandler
+  Args: 
+  Weight: 20
+-
+  Name: zara要和你语音，结果你半路跑了，zara向你姐姐告状并给你预约了一顿小绿
+  Desc: 获得${num}下小绿。
+  Method: GainNumber
+  Args: 
+    min: 40
+    max: 60
+  Weight: 50
+-
+  Name: net发动空降，你获得全工具鉴赏
+  Desc: 主使用当前全部工具各打20下。
+  Method: NoHandler
+  Args: 
+  Weight: 20
+-
+  Name: net成功举办了运动会
+  Desc: 你姐姐报名参加了使用${tool}以${position}姿势打${num}下的项目。
+  Method: Sp
+  Args: 
+  Weight: 50
+-
+  Name: RK发现你的报数不合格
+  Desc: 主任意选五件工具各打二十下。
+  Method: NoHandler
+  Args: 
+  Weight: 20
+-
+  Name: 火球太太把刚买的沙漏送给了你
+  Desc: 接下来五分钟主可以进行任意惩罚。
+  Method: NoHandler
+  Args: 
+  Weight: 40
+-
+  Name: Virtuoso诱骗你尝尝香烟，回家烟味被姐姐闻到
+  Desc: 获得板子皮带各五十。
+  Method: NoHandler
+  Args: 
+  Weight: 25
+-
+  Name: Virtuoso找你打掩护逃避惩罚，事情败露，Virtuoso被告知要挨硅胶拍，你也同罚
+  Desc: 获得硅胶拍惩罚${num}下。
+  Method: GainNumber
+  Args: 
+    min: 50
+    max: 100
+  Weight: 30
+-
+  Name: Austin发现你号称减肥却在吃夜宵，决定对你进行督促
+  Desc: 被${tool}打${num}下，姿势为${position}。
+  Method: Sp
+  Args: 
+  Weight: 50
+-
+  Name: 乙凌羽忘记班长交代的任务，把责任推到了你身上
+  Desc: 收获20下巴掌和80下戒尺。
+  Method: NoHandler
+  Args: 
+  Weight: 25
+-
+  Name: 约定好给冷子姐的配音鸽了，你感到自责
+  Desc: 使用${tool}按照${position}的姿势进行DIY，数量为${num}。
+  Method: Sp
+  Args: 
+    mode: diy
+  Weight: 25
+-
+  Name: 姐姐决定对你进行一次爱的教育
+  Desc: 以${position}姿势接受${num}下${tool}的教育。
+  Method: Sp
+  Args: 
+    mode: otk
+  Weight: 75
+-
+  Name: 你半夜电话铃响了，电视也不知道为啥打开了
+  Desc: 贞子姐姐只是想让你以${position}姿势被${tool}打${num}下
+  Method: Sp
+  Args: 
+  Weight: 75
+-
+  Name: 姐姐看到小说中喜欢的角色被刀了
+  Desc: 姐姐现在想让你以${position}姿势被${tool}打${num}下
+  Method: Sp
+  Args: 
+  Weight: 50
+-
+  Name: 你成功上了姐姐的死亡名单
+  Desc: 唬你的啦，继续前进吧
+  Method: NoHandler
+  Args: 
+  Weight: 50
+-
+  Name: 姐姐想要检查你的手机使用时间
+  Desc: 给姐姐看你的手机使用时长，并获得使用小时数乘以${num}下小红
+  Method: GainNumber
+  Args: 
+    min: 2
+    max: 4
+  Weight: 50
+-
+  Name: 野生的冰冰路过了，为你留下了一个地刺坐垫
+  Desc: 坐刺垫(硬板凳)${num}分钟
+  Method: GainNumber
+  Args: 
+    min: 10
+    max: 30
+  Weight: 50
+-
+  Name: 野生的Genecro路过了，为你留下了美好的玩法
+  Desc: 以${position}姿势被${tool}打${num}下。
+  Method: SpWithMethod
+  Args: 
+  Weight: 50
+-
+  Name: 尼小诺路过了，对你姐姐进行了一些指导
+  Desc: 以${position}姿势被${tool}打${num}下。
+  Method: SpWithMethod
+  Args: 
+  Weight: 50
+-
+  Name: NetSpanker路过了，对你姐姐进行了一些指导
+  Desc: 以${position}姿势被${tool}打${num}下。
+  Method: SpWithMethod
+  Args: 
+  Weight: 50
+...

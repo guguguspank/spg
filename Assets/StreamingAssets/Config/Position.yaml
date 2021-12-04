@@ -1,0 +1,49 @@
+# 姿势配置文件
+---
+-
+  Name: otk
+  Desc: 
+  Weight: 50
+  Tag: 
+    - sp
+    - diy
+    - otk
+-
+  Name: 站立弯腰
+  Desc: 
+  Weight: 50
+  Tag: 
+    - sp
+-
+  Name: 尿布式
+  Desc: 
+  Weight: 50
+  Tag: 
+    - sp
+    - diy
+-
+  Name: 跪趴
+  Desc: 
+  Weight: 50
+  Tag: 
+    - sp
+    - diy
+-
+  Name: 扶墙站立
+  Desc: 
+  Weight: 50
+  Tag: 
+    - sp
+-
+  Name: 趴着
+  Desc: 
+  Weight: 50
+  Tag: 
+    - sp
+-
+  Name: 手扶椅子/桌子
+  Desc: 
+  Weight: 50
+  Tag: 
+    - sp
+...
