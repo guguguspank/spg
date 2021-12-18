@@ -2,31 +2,19 @@ using System.Collections.Generic;
 
 namespace Spg
 {
-    public class SpTool
+    public class SpPosture
     {
         private string _name;
-        private int? _minCount;
-        private int? _maxCount;
         private int? _weight;
         private bool? _enable;
         private List<string> _tag;
 
         public string Name
         {
-            get => _name ?? "戒尺";
+            get => _name ?? "otk";
             set => _name = value;
         }
         public string Desc { get; set; }
-        public int MinCount 
-        {
-            get => _minCount ?? 1;
-            set => _minCount = value;
-        }
-        public int MaxCount
-        {
-            get => _maxCount ?? 10;
-            set => _maxCount = value;
-        }
         public int Weight
         {
             get => _weight ?? 50;

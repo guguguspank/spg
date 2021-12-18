@@ -1,0 +1,7 @@
+---
+-
+  Name: Extra Test Event
+  Desc: 测试事件
+  Weight: 50
+  Command: Test
+...

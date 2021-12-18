@@ -1,0 +1,30 @@
+---
+-
+  Name: 前进一格
+  Desc: test
+  Weight: 50
+  Command: Move
+  Args:
+    Step: 1
+-
+  Name: 前进两格
+  Desc: test
+  Weight: 50
+  Command: Move
+  Args:
+    Step: 2
+-
+  Name: 后退一格
+  Desc: test
+  Weight: 50
+  Command: Move
+  Args:
+    Step: -1
+-
+  Name: 后退两格
+  Desc: test
+  Weight: 50
+  Command: Move
+  Args:
+    Step: -2
+...

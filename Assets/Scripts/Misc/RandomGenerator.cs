@@ -2,85 +2,75 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
 namespace Spg
 {
-    public class RandomGenerator : Singleton<RandomGenerator>
+    public class RandomGenerator : MonoSingleton<RandomGenerator>
     {
-        private Dictionary<WeightType, (float, int)[]> WeightDict { get; set; }
+        private Dictionary<WeightType, (float, int)[]> WeightDict { get; set; } = new Dictionary<WeightType, (float, int)[]>();
 
-        public void Init()
+        public IEnumerator Init()
         {
-            WeightDict = new Dictionary<WeightType, (float, int)[]>();
-            List<int> l = new List<int>();
-            l.Add(RuntimeData.Instance.Conf.Event);
-            l.Add(RuntimeData.Instance.Conf.SpEvent);
-            InitWeight(WeightType.Base, l);
-            l.Clear();
+            yield return StartCoroutine(UpdateTool());
+            yield return StartCoroutine(UpdatePosture());
+            yield return StartCoroutine(UpdateEvent());
+        }
 
-            foreach (var item in RuntimeData.Instance.EventList)
+        public IEnumerator UpdateTool()
+        {
+            List<int> wl = new List<int>();
+            foreach (var item in RuntimeData.Instance.SpTools)
             {
-                l.Add(item.Weight);
+                wl.Add(item.Weight);
             }
-            InitWeight(WeightType.Event, l);
-            l.Clear();
+            InitWeight(WeightType.SpTool, wl);
+            wl.Clear();
+            foreach (var item in RuntimeData.Instance.OtkTools)
+            {
+                wl.Add(item.Weight);
+            }
+            InitWeight(WeightType.OtkTool, wl);
+            wl.Clear();
+            foreach (var item in RuntimeData.Instance.DiyTools)
+            {
+                wl.Add(item.Weight);
+            }
+            InitWeight(WeightType.DiyTool, wl);
+            yield return null;
+        }
 
-            foreach (var item in RuntimeData.Instance.SpEventList)
+        public IEnumerator UpdatePosture()
+        {
+            List<int> wl = new List<int>();
+            foreach (var item in RuntimeData.Instance.SpPostures)
             {
-                l.Add(item.Weight);
+                wl.Add(item.Weight);
             }
-            InitWeight(WeightType.SpEvent, l);
-            l.Clear();
+            InitWeight(WeightType.SpPosture, wl);
+            wl.Clear();
+            foreach (var item in RuntimeData.Instance.OtkPostures)
+            {
+                wl.Add(item.Weight);
+            }
+            InitWeight(WeightType.OtkPosture, wl);
+            wl.Clear();
+            foreach (var item in RuntimeData.Instance.DiyPostures)
+            {
+                wl.Add(item.Weight);
+            }
+            InitWeight(WeightType.DiyPosture, wl);
+            yield return null;
+        }
 
-            foreach (var item in RuntimeData.Instance.PlayMethodList)
+        public IEnumerator UpdateEvent()
+        {
+            List<int> wl = new List<int>();
+            foreach (var item in RuntimeData.Instance.Events)
             {
-                l.Add(item.Weight);
+                wl.Add(item.Weight);
             }
-            InitWeight(WeightType.PlayMethod, l);
-            l.Clear();
-
-            foreach (var item in RuntimeData.Instance.SpPositionList)
-            {
-                l.Add(item.Weight);
-            }
-            InitWeight(WeightType.SpPosition, l);
-            l.Clear();
-
-            foreach (var item in RuntimeData.Instance.DiyPositionList)
-            {
-                l.Add(item.Weight);
-            }
-            InitWeight(WeightType.DiyPosition, l);
-            l.Clear();
-
-            foreach (var item in RuntimeData.Instance.OtkPositionList)
-            {
-                l.Add(item.Weight);
-            }
-            InitWeight(WeightType.OtkPosition, l);
-            l.Clear();
-
-            foreach (var item in RuntimeData.Instance.SpToolList)
-            {
-                l.Add(item.Weight);
-            }
-            InitWeight(WeightType.SpTool, l);
-            l.Clear();
-
-            foreach (var item in RuntimeData.Instance.DiyToolList)
-            {
-                l.Add(item.Weight);
-            }
-            InitWeight(WeightType.DiyTool, l);
-            l.Clear();
-
-            foreach (var item in RuntimeData.Instance.OtkToolList)
-            {
-                l.Add(item.Weight);
-            }
-            InitWeight(WeightType.OtkTool, l);
-            l.Clear();
+            InitWeight(WeightType.Event, wl);
+            yield return null;
         }
 
         public int GainIndex(WeightType type)
@@ -145,14 +135,10 @@ namespace Spg
 
     public enum WeightType
     {
-        Base,
         Event,
-        SpEvent,
-        ExtraEvent,
-        PlayMethod,
-        SpPosition,
-        DiyPosition,
-        OtkPosition,
+        SpPosture,
+        DiyPosture,
+        OtkPosture,
         SpTool,
         DiyTool,
         OtkTool

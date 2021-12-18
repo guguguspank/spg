@@ -1,0 +1,24 @@
+---
+-
+  Name: test1
+  Desc: test
+  Weight: 50
+  Command: Sp
+  Args: 
+    Num: 50
+-
+  Name: test2
+  Desc: test
+  Weight: 50
+  Command: Sp
+-
+  Name: test3
+  Desc: test
+  Weight: 50
+  Command: Sp
+-
+  Name: test4
+  Desc: test
+  Weight: 50
+  Command: Sp
+...

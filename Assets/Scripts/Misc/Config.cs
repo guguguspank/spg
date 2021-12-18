@@ -1,16 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using System.IO;
 using YamlDotNet.Serialization;
-using YamlDotNet.Serialization.NamingConventions;
 
 namespace Spg
 {
     public static class Config
     {
         /// <summary>
-        /// ��ȡYAML����
+        /// 简单读取YAML配置
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="path"></param>
@@ -23,6 +19,12 @@ namespace Spg
             return conf;
         }
 
+        /// <summary>
+        /// 简单存储对象到yaml文件
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="path"></param>
         public static void SaveYaml<T>(T data, string path)
         {
             var serializer = new SerializerBuilder().Build();

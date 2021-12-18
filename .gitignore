@@ -75,3 +75,4 @@ crashlytics-build.properties
 
 # test
 /Assets/Test/
+/Assets/Test.meta

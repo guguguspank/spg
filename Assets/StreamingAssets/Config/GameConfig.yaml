@@ -1,12 +1,5 @@
-# 游戏配置
 ---
-# 概率
-Event: 30
-SpEvent: 70
-
-# 是否启用Extra
+ConfigVersion: 1
+GirdCount: 20
 Extra: false
-
-# GameData
-GirdCount: 100
 ...
