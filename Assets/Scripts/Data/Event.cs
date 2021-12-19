@@ -65,12 +65,15 @@ namespace Spg
 
         public Event(Event e)
         {
+            Id = e.Id;
             Name = e.Name;
             Desc = e.Desc;
             Weight = e.Weight;
             Command = e.Command;
             Args = new Dictionary<string, string>(e.Args);
+            Ignore = e.Ignore;
             Step = e.Step;
+            IsInit = e.IsInit;
         }
     }
 }
