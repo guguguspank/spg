@@ -1,18 +1,26 @@
+using System;
 using System.Collections.Generic;
 using YamlDotNet.Serialization;
 
 namespace Spg
 {
-    public class Event
+    public class Event : IConfig
     {
+        private string _id;
         private string _name;
         private int? _weight;
         private string _command;
         private Dictionary<string, string> _args;
+        private bool? _ignore;
         
         private int? _step;
         private bool? _isInit;
 
+        public string Id
+        {
+            get => _id ?? Guid.NewGuid().ToString();
+            set => _id = value;
+        }
         public string Name
         {
             get => _name ?? "测试事件";
@@ -33,6 +41,11 @@ namespace Spg
         {
             get => _args ?? new Dictionary<string, string>();
             set => _args = value;
+        }
+        public bool Ignore
+        {
+            get => _ignore ?? false;
+            set => _ignore = value;
         }
 
         [YamlIgnore]

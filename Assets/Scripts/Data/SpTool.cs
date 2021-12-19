@@ -1,16 +1,25 @@
+using System;
 using System.Collections.Generic;
+using YamlDotNet.Serialization;
 
 namespace Spg
 {
-    public class SpTool
+    public class SpTool : IConfig
     {
+        private string _id;
         private string _name;
         private int? _minCount;
         private int? _maxCount;
         private int? _weight;
         private bool? _enable;
         private List<string> _tag;
+        private bool? _ignore;
 
+        public string Id
+        {
+            get => _id ?? Guid.NewGuid().ToString();
+            set => _id = value;
+        }
         public string Name
         {
             get => _name ?? "戒尺";
@@ -42,12 +51,18 @@ namespace Spg
             get => _tag ?? new List<string> { "sp", "diy", "otk" };
             set => _tag = value;
         }
+        public bool Ignore
+        {
+            get => _ignore ?? false;
+            set => _ignore = value;
+        }
 
+        [YamlIgnore]
         public bool IsOtk
         {
             get => Tag.Contains("otk");
         }
-
+        [YamlIgnore]
         public bool IsDiy
         {
             get => Tag.Contains("diy");

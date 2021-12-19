@@ -36,10 +36,12 @@ namespace Spg
 
         IEnumerator Init()
         {
-            yield return StartCoroutine(GameObject.Find("Canvas").GetComponent<ResourceMigration>().MigrateStreamingAssets());
+            ResourceMigration rs = GameObject.Find("Canvas").GetComponent<ResourceMigration>();
+            yield return StartCoroutine(rs.MigrateStreamingAssets());
             yield return StartCoroutine(RuntimeData.Instance.Init());
+            yield return StartCoroutine(rs.UpdateStreamingAssets());
             yield return StartCoroutine(RandomGenerator.Instance.Init());
-
+            
             SceneManager.LoadScene("menu");
         }
     }

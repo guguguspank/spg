@@ -1,5 +1,3 @@
----
-ConfigVersion: 1
-GirdCount: 20
+ConfigVersion: 2
 Extra: false
-...
+GirdCount: 20

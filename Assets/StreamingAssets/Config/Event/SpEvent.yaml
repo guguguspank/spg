@@ -1,24 +1,25 @@
----
--
+- Id: cbb7503f-4e68-4c25-ae9a-8564c2ca3279
   Name: test1
   Desc: test
   Weight: 50
   Command: Sp
-  Args: 
+  Args:
     Num: 50
--
+- Id: 7e6f8ef8-c44e-4316-adf5-6e1f397ce976
   Name: test2
   Desc: test
   Weight: 50
   Command: Sp
--
+  Args: {}
+- Id: 61cec9cb-c3b7-4acd-b4be-dd90e1f3c3a8
   Name: test3
   Desc: test
   Weight: 50
   Command: Sp
--
+  Args: {}
+- Id: 792b55be-947b-4ba4-84e1-d8bb5b6bfdb2
   Name: test4
   Desc: test
   Weight: 50
   Command: Sp
-...
+  Args: {}

@@ -1,49 +1,46 @@
-# 姿势配置文件
----
--
+- Id: d87fe4cd-d172-4d5f-8d5a-14082724b641
   Name: otk
-  Desc: 
   Weight: 50
-  Tag: 
-    - sp
-    - diy
-    - otk
--
+  Enable: true
+  Tag:
+  - sp
+  - diy
+  - otk
+- Id: bf198e67-a4b4-477b-859a-83192adc5eb2
   Name: 站立弯腰
-  Desc: 
   Weight: 50
-  Tag: 
-    - sp
--
+  Enable: true
+  Tag:
+  - sp
+- Id: 4f0faea9-e386-4e8d-8276-306a8fc2c14d
   Name: 尿布式
-  Desc: 
   Weight: 50
-  Tag: 
-    - sp
-    - diy
--
+  Enable: true
+  Tag:
+  - sp
+  - diy
+- Id: cd065fc4-e2a4-4158-92e5-f76b1c4dc707
   Name: 跪趴
-  Desc: 
   Weight: 50
-  Tag: 
-    - sp
-    - diy
--
+  Enable: true
+  Tag:
+  - sp
+  - diy
+- Id: bc31df3a-1b03-44a7-bd27-642b8e2d21ad
   Name: 扶墙站立
-  Desc: 
   Weight: 50
-  Tag: 
-    - sp
--
-  Name: 趴着
-  Desc: 
+  Enable: true
+  Tag:
+  - sp
+- Id: ee849648-3201-49b9-8b15-df63fab2bf57
+  Name: 趴床
   Weight: 50
-  Tag: 
-    - sp
--
-  Name: 手扶椅子/桌子
-  Desc: 
+  Enable: true
+  Tag:
+  - sp
+- Id: 5f9e7776-ae56-4e43-bfa3-67a5ccef9bdc
+  Name: 手扶桌子
   Weight: 50
-  Tag: 
-    - sp
-...
+  Enable: true
+  Tag:
+  - sp

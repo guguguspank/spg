@@ -1,139 +1,127 @@
-# 工具配置文件
----
--
+- Id: 6f7887ad-77bb-4f6d-8cb3-95154959ad67
   Name: 手
   MinCount: 1
   MaxCount: 32
   Weight: 50
-  Tag: 
-    - sp
-    - diy
-    - otk
--
+  Enable: true
+  Tag:
+  - sp
+  - diy
+  - otk
+- Id: 279894dd-c071-4801-900c-4179091bfa2a
   Name: 小红
   Desc: 小号
   MinCount: 20
   MaxCount: 40
   Weight: 50
-  Tag: 
-    - sp
-    - diy
-    - otk
--
+  Enable: true
+  Tag:
+  - sp
+  - diy
+  - otk
+- Id: 21c637aa-bfab-42de-94c3-0e0712c7107a
   Name: 小红
   Desc: 大号
   MinCount: 1
   MaxCount: 20
   Weight: 50
-  Tag: 
-    - sp
-    - diy
-    - otk
--
+  Enable: true
+  Tag:
+  - sp
+  - diy
+  - otk
+- Id: 687a396d-c720-45a4-8f3e-3434958a1816
   Name: 小绿
-  Desc: 
   MinCount: 20
   MaxCount: 30
   Weight: 50
-  Tag: 
-    - sp
-    - diy
-    - otk
--
+  Enable: true
+  Tag:
+  - sp
+  - diy
+  - otk
+- Id: df2cf39d-2b86-4999-ad31-3625181092d0
   Name: 藤条
-  Desc: 6-10mm
+  Desc: 10mm
   MinCount: 15
   MaxCount: 25
   Weight: 50
-  Tag: 
-    - sp
--
+  Enable: true
+  Tag:
+  - sp
+- Id: e2dd4b53-951e-4866-95b1-b04a8b4f0cf3
   Name: 藤条
-  Desc: 10-14mm
+  Desc: 12mm
   MinCount: 5
   MaxCount: 15
   Weight: 50
-  Tag: 
-    - sp
--
+  Enable: true
+  Tag:
+  - sp
+- Id: 4ff7c738-996f-429c-bdf6-61c09eb61256
   Name: 戒尺
   Desc: 紫光檀
   MinCount: 10
   MaxCount: 20
   Weight: 50
-  Tag: 
-    - sp
--
+  Enable: true
+  Tag:
+  - sp
+- Id: d63cb34e-af4a-48b0-99c9-985dfae1457c
   Name: 猫爪拍
   Desc: 硅胶
   MinCount: 15
   MaxCount: 30
   Weight: 50
-  Tag: 
-    - sp
-    - otk
-    - diy
--
+  Enable: true
+  Tag:
+  - sp
+  - otk
+  - diy
+- Id: 2d5b1331-d180-4f9a-b0df-61ddb09c2282
   Name: 猫爪拍
   Desc: 紫光檀
   MinCount: 10
   MaxCount: 20
   Weight: 50
-  Tag: 
-    - sp
-    - otk
-    - diy
--
-  Name: 小拍子
-  Desc: 紫光檀
-  MinCount: 10
-  MaxCount: 20
-  Weight: 50
-  Tag: 
-    - sp
-    - otk
-    - diy
--
-  Name: 小拍子
-  Desc: 亚克力
-  MinCount: 20
-  MaxCount: 40
-  Weight: 50
-  Tag: 
-    - sp
-    - diy
-    - otk
--
+  Enable: true
+  Tag:
+  - sp
+  - otk
+  - diy
+- Id: 17b57df2-67e3-4ae4-b4c7-2c8871aa01f0
   Name: 树脂棍
   Desc: 9mm
   MinCount: 15
   MaxCount: 25
   Weight: 50
-  Tag: 
-    - sp
--
+  Enable: true
+  Tag:
+  - sp
+- Id: 73cc2fa7-3b9a-4ab8-9a47-276fcc5b6318
   Name: 树脂棍
   Desc: 10mm
   MinCount: 5
   MaxCount: 15
   Weight: 50
-  Tag: 
-    - sp
--
+  Enable: true
+  Tag:
+  - sp
+- Id: 73c41b1d-dd71-4903-9cb6-1880cb4ccdd2
   Name: 热熔胶
   Desc: 10mm
   MinCount: 10
   MaxCount: 40
   Weight: 50
-  Tag: 
-    - sp
-    - diy
--
+  Enable: true
+  Tag:
+  - sp
+  - diy
+- Id: 148e2c92-9c6d-4bcb-b935-0acf34874f9a
   Name: 皮带
-  Desc: 
   MinCount: 10
   MaxCount: 25
   Weight: 50
-  Tag: 
-    - sp
-...
+  Enable: true
+  Tag:
+  - sp
