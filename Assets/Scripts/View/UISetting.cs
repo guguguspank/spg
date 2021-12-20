@@ -16,7 +16,7 @@ namespace Spg
         {
             Panel = transform.Find("SettingPanel").gameObject;
 
-            transform.Find("SettingButton").GetComponent<Button>().onClick.AddListener(OpenSettingPanel);
+            GameObject.Find("UI Canvas/SettingButton").GetComponent<Button>().onClick.AddListener(OpenSettingPanel);
             transform.Find("SettingPanel/Image/sure").GetComponent<Button>().onClick.AddListener(SaveConfig);
             input = transform.Find("SettingPanel/Image/GirdCountInput").GetComponent<TMP_InputField>();
             input.onValueChanged.AddListener(OnCountChange);
