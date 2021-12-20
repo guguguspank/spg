@@ -129,7 +129,7 @@ namespace Spg
                 }
             }
 
-            WeightDict.Add(type, weights);
+            WeightDict[type] = weights;
         }
     }
 
