@@ -86,9 +86,9 @@ namespace Spg
                 button.GetComponent<Button>().onClick.AddListener(ShowDetail);
 
                 panel.Find("NameInput").GetComponent<TMP_InputField>().text = item.Name;
-                panel.Find("NameInput").GetComponent<TMP_InputField>().onValueChanged.AddListener(ToolTitle);
+                panel.Find("NameInput").GetComponent<TMP_InputField>().onEndEdit.AddListener(ToolTitle);
                 panel.Find("DescInput").GetComponent<TMP_InputField>().text = item.Desc;
-                panel.Find("DescInput").GetComponent<TMP_InputField>().onValueChanged.AddListener(ToolTitle);
+                panel.Find("DescInput").GetComponent<TMP_InputField>().onEndEdit.AddListener(ToolTitle);
                 panel.Find("MinCountInput").GetComponent<TMP_InputField>().text = item.MinCount.ToString();
                 panel.Find("MaxCountInput").GetComponent<TMP_InputField>().text = item.MaxCount.ToString();
                 panel.Find("WeightInput").GetComponent<TMP_InputField>().text = item.Weight.ToString();
@@ -122,9 +122,9 @@ namespace Spg
                 button.GetComponent<Button>().onClick.AddListener(ShowDetail);
 
                 panel.Find("NameInput").GetComponent<TMP_InputField>().text = item.Name;
-                panel.Find("NameInput").GetComponent<TMP_InputField>().onValueChanged.AddListener(PostureTitle);
+                panel.Find("NameInput").GetComponent<TMP_InputField>().onEndEdit.AddListener(PostureTitle);
                 panel.Find("DescInput").GetComponent<TMP_InputField>().text = item.Desc;
-                panel.Find("DescInput").GetComponent<TMP_InputField>().onValueChanged.AddListener(PostureTitle);
+                panel.Find("DescInput").GetComponent<TMP_InputField>().onEndEdit.AddListener(PostureTitle);
                 panel.Find("WeightInput").GetComponent<TMP_InputField>().text = item.Weight.ToString();
                 panel.Find("WeightInput").GetComponent<TMP_InputField>().onEndEdit.AddListener(OnWeightEdit);
                 panel.Find("EnableInput").GetComponent<Toggle>().isOn = item.Enable;
@@ -258,7 +258,35 @@ namespace Spg
 
         private void OnCancelClick()
         {
+            foreach (var item in ToolDict)
+            {
+                SpTool tool = item.Value.spTool;
+                Transform panel = item.Key.transform;
+                panel.Find("NameInput").GetComponent<TMP_InputField>().text = tool.Name;
+                panel.Find("DescInput").GetComponent<TMP_InputField>().text = tool.Desc;
+                panel.Find("MinCountInput").GetComponent<TMP_InputField>().text = tool.MinCount.ToString();
+                panel.Find("MaxCountInput").GetComponent<TMP_InputField>().text = tool.MaxCount.ToString();
+                panel.Find("WeightInput").GetComponent<TMP_InputField>().text = tool.Weight.ToString();
+                panel.Find("EnableInput").GetComponent<Toggle>().isOn = tool.Enable;
+                panel.Find("IgnoreInput").GetComponent<Toggle>().isOn = tool.Ignore;
+                panel.Find("DiyInput").GetComponent<Toggle>().isOn = tool.IsDiy;
+                panel.Find("OtkInput").GetComponent<Toggle>().isOn = tool.IsOtk;
+                item.Value.bar.transform.Find("Desc").GetComponent<TextMeshProUGUI>().text = tool.ToString();
+            }
 
+            foreach (var item in PostureDict)
+            {
+                SpPosture posture = item.Value.spPosture;
+                Transform panel = item.Key.transform;
+                panel.Find("NameInput").GetComponent<TMP_InputField>().text = posture.Name;
+                panel.Find("DescInput").GetComponent<TMP_InputField>().text = posture.Desc;
+                panel.Find("WeightInput").GetComponent<TMP_InputField>().text = posture.Weight.ToString();
+                panel.Find("EnableInput").GetComponent<Toggle>().isOn = posture.Enable;
+                panel.Find("IgnoreInput").GetComponent<Toggle>().isOn = posture.Ignore;
+                panel.Find("DiyInput").GetComponent<Toggle>().isOn = posture.IsDiy;
+                panel.Find("OtkInput").GetComponent<Toggle>().isOn = posture.IsOtk;
+                item.Value.bar.transform.Find("Desc").GetComponent<TextMeshProUGUI>().text = posture.ToString();
+            }
 
             SetDefaultPanel();
             CustomizePanel.SetActive(false);
