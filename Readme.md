@@ -8,9 +8,9 @@ Download from [GitHub Releases](https://github.com/guguguspank/spg/releases) and
 
 ## Try Online
 
-You can visit https://guguguspank.github.io/spg-deploy/ to try the WebGL version of game.
+You can visit https://spigra.com/ to try the WebGL version of the game.
 
-Note that Unity WebGL content may can not run on  on mobile devices. You can learn this from [WebGL Browser Compatibility](https://docs.unity3d.com/Manual/webgl-browsercompatibility.html).
+Note that Unity WebGL content may can not run  on mobile devices. You can learn this from [WebGL Browser Compatibility](https://docs.unity3d.com/Manual/webgl-browsercompatibility.html).
 
 ## License
 
