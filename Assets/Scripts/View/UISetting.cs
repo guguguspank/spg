@@ -7,10 +7,12 @@ using UnityEngine.UI;
 
 namespace Spg
 {
+    [RequireComponent(typeof(UpdateConfig))]
     public class UISetting : MonoBehaviour
     {
         TMP_InputField input;
         GameObject Panel;
+        GameObject UpdatePaenl;
 
         private void Awake()
         {
@@ -18,16 +20,33 @@ namespace Spg
 
             GameObject.Find("UI Canvas/SettingButton").GetComponent<Button>().onClick.AddListener(OpenSettingPanel);
             transform.Find("SettingPanel/Image/sure").GetComponent<Button>().onClick.AddListener(SaveConfig);
+            transform.Find("SettingPanel/Image/checkUpdate").GetComponent<Button>().onClick.AddListener(OnUpdateClick);
+            UpdatePaenl = transform.Find("UpdatePanel").gameObject;
             input = transform.Find("SettingPanel/Image/GirdCountInput").GetComponent<TMP_InputField>();
             input.onValueChanged.AddListener(OnCountChange);
 
+            UpdatePaenl.SetActive(false);
             Panel.SetActive(false);
+        }
+
+        private void OnUpdateClick()
+        {
+            UpdatePaenl.SetActive(true);
+            StartCoroutine(UC());
+        }
+
+        private IEnumerator UC()
+        {
+            yield return StartCoroutine(transform.GetComponent<UpdateConfig>().UpdateGithub());
+            transform.Find("SettingPanel/Image/ConfigVersion").GetComponent<TextMeshProUGUI>().text = $"{RuntimeData.Instance.Conf.ConfigVersion}(已尝试更新)";
+            UpdatePaenl.SetActive(false);
         }
 
         private void OpenSettingPanel()
         {
             Panel.SetActive(true);
             input.text = RuntimeData.Instance.Conf.GirdCount.ToString();
+            transform.Find("SettingPanel/Image/ConfigVersion").GetComponent<TextMeshProUGUI>().text = $"{RuntimeData.Instance.Conf.ConfigVersion}";
         }
 
         private void SaveConfig()

@@ -9,6 +9,7 @@ namespace Spg
     /// 游戏初始化
     /// </summary>
     [RequireComponent(typeof(ResourceMigration))]
+    [RequireComponent(typeof(UpdateConfig))]
     public class InitScene : MonoBehaviour
     {
         private TextMeshProUGUI Loading;
@@ -36,10 +37,9 @@ namespace Spg
 
         IEnumerator Init()
         {
-            ResourceMigration rs = GameObject.Find("Canvas").GetComponent<ResourceMigration>();
-            yield return StartCoroutine(rs.MigrateStreamingAssets());
+            yield return StartCoroutine(GameObject.Find("Canvas").GetComponent<ResourceMigration>().MigrateStreamingAssets());
             yield return StartCoroutine(RuntimeData.Instance.Init());
-            yield return StartCoroutine(rs.UpdateStreamingAssets());
+            yield return StartCoroutine(GameObject.Find("Canvas").GetComponent<UpdateConfig>().UpdateStreamingAssets());
             yield return StartCoroutine(RandomGenerator.Instance.Init());
             
             SceneManager.LoadScene("menu");
