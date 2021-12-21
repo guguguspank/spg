@@ -24,6 +24,12 @@ namespace Spg
         {
             EventManager.Instance.AddListener(Consts.E_Sp, Events.Instance.Sp);
             EventManager.Instance.AddListener(Consts.E_Move, Events.Instance.Move);
+            EventManager.Instance.AddListener(Consts.E_Num, Events.Instance.Num);
+            EventManager.Instance.AddListener(Consts.E_BackToStart, Events.Instance.BackStart);
+            EventManager.Instance.AddListener(Consts.E_Otk, Events.Instance.Otk);
+            EventManager.Instance.AddListener(Consts.E_Diy, Events.Instance.Diy);
+            EventManager.Instance.AddListener(Consts.E_NoHandle, Events.Instance.NoHandle);
+            EventManager.Instance.AddListener(Consts.E_AddEffect, Events.Instance.AddEffect);
         }
     }
 }

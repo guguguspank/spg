@@ -20,6 +20,7 @@ namespace Spg
             Anime = GetComponent<Animator>();
 
             EventManager.Instance.AddListener(Consts.E_PlayerRun, Move);
+            EventManager.Instance.AddListener(Consts.E_GoToStart, GoToStart);
         }
 
         public void Move(object step)
@@ -28,6 +29,16 @@ namespace Spg
             {
                 StartCoroutine(MoveToPosition(Step));
             }
+        }
+
+        public void GoToStart(object obj)
+        {
+            if (transform.localScale.x < 0)
+            {
+                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            }
+            target = GameData.Instance.GetStartGird();
+            transform.position = target;
         }
 
         IEnumerator MoveToPosition(int step)

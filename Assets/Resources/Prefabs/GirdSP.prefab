@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1355745477458465059}
   - component: {fileID: 1355745477458465060}
   m_Layer: 5
-  m_Name: Gird
+  m_Name: GirdSP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,10 +168,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 50
   m_fontSizeMax: 72
   m_fontStyle: 0

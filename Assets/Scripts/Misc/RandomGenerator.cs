@@ -85,7 +85,7 @@ namespace Spg
 
         public T GainItem<T>()
         {
-            return default(T);
+            return default;
         }
 
         private void InitWeight(WeightType type, List<int> weightList)

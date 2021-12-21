@@ -14,11 +14,13 @@ namespace Spg
 
         public List<Gird> Girds { get; set; }
         public Player player;
-        
+
+        public Dictionary<string, Effect> Effects;
 
 
         public void Init()
         {
+            Effects = new Dictionary<string, Effect>();
             player = GameObject.Find("Player").GetComponent<Player>();
             CurrentGird = 0;
 
@@ -51,6 +53,12 @@ namespace Spg
                 CurrentGird--;
             }
             return Girds[CurrentGird].Pos;
+        }
+
+        public Vector3 GetStartGird()
+        {
+            CurrentGird = 0;
+            return Girds[0].Pos;
         }
 
         /// <summary>
@@ -136,5 +144,10 @@ namespace Spg
             }
             return false;
         }
+    }
+
+    public class Effect
+    {
+        public int Count { get; set; }
     }
 }

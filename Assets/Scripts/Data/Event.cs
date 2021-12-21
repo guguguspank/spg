@@ -15,6 +15,7 @@ namespace Spg
         
         private int? _step;
         private bool? _isInit;
+        private string _showMsg;
 
         public string Id
         {
@@ -60,6 +61,12 @@ namespace Spg
             get => _isInit ?? false;
             set => _isInit = value;
         }
+        [YamlIgnore]
+        public string ShowMsg
+        {
+            get => _showMsg ?? "";
+            set => _showMsg = value;
+        }
 
         public Event() { }
 
@@ -74,6 +81,7 @@ namespace Spg
             Ignore = e.Ignore;
             Step = e.Step;
             IsInit = e.IsInit;
+            ShowMsg = e.ShowMsg;
         }
     }
 }

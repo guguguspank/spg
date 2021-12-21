@@ -9,6 +9,7 @@ namespace Spg
     public class Map
     {
         private GameObject Gird = Resources.Load<GameObject>("Prefabs/Gird");
+        private GameObject GirdSP = Resources.Load<GameObject>("Prefabs/GirdSP");
         private GameObject Clap = Resources.Load<GameObject>("Prefabs/Clap");
         private Transform Parent = GameObject.Find("ChessBoard").transform;
 
@@ -59,9 +60,10 @@ namespace Spg
 
         private GameObject GenPoint(Vector3 vector)
         {
-            GameObject gameObject = GenGird(vector);
+            GameObject gameObject = GameObject.Instantiate<GameObject>(GirdSP);
+            gameObject.transform.SetParent(Parent);
+            gameObject.transform.position = vector;
             TextMeshProUGUI text = gameObject.transform.Find("Text").GetComponent<TextMeshProUGUI>();
-            text.fontSize = 200;
             text.alignment = TextAlignmentOptions.MidlineFlush;
             return gameObject;
         }

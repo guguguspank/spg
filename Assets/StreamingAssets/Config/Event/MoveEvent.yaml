@@ -26,3 +26,9 @@
   Command: Move
   Args:
     Step: -2
+- Id: 64d5bddc-22c3-4752-87c1-58c56839769a
+  Name: 回到起点
+  Desc: test
+  Weight: 50
+  Command: BackToStart
+  Args: {}

@@ -129,10 +129,13 @@ namespace Spg
             Config.SaveYaml(temp, Path.Combine(Application.persistentDataPath, "Config/Event/SpEvent.yaml"));
             RuntimeData.Instance.Events.AddRange(temp);
 
-            temp = Config.LoadYaml<List<Event>>(Path.Combine(Application.streamingAssetsPath, "Config/Event/ExtraEvent.yaml"));
-            yield return StartCoroutine(UpdateConfig("Config/Event/ExtraEvent.yaml", temp, false));
-            Config.SaveYaml(temp, Path.Combine(Application.persistentDataPath, "Config/Event/ExtraEvent.yaml"));
-            RuntimeData.Instance.Events.AddRange(temp);
+            if (RuntimeData.Instance.Conf.Extra)
+            {
+                temp = Config.LoadYaml<List<Event>>(Path.Combine(Application.streamingAssetsPath, "Config/Event/ExtraEvent.yaml"));
+                yield return StartCoroutine(UpdateConfig("Config/Event/ExtraEvent.yaml", temp, false));
+                Config.SaveYaml(temp, Path.Combine(Application.persistentDataPath, "Config/Event/ExtraEvent.yaml"));
+                RuntimeData.Instance.Events.AddRange(temp);
+            }
         }
     }
 }

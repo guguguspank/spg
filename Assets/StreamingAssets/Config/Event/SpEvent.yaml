@@ -1,25 +1,96 @@
 - Id: cbb7503f-4e68-4c25-ae9a-8564c2ca3279
-  Name: test1
-  Desc: test
-  Weight: 50
-  Command: Sp
-  Args:
-    Num: 50
-- Id: 7e6f8ef8-c44e-4316-adf5-6e1f397ce976
-  Name: test2
-  Desc: test
+  Name: JayZ觉得你的主需要点一份外卖
+  Desc: 对主说“你没吃饭吗？”，并收获_num下_tool，姿势为_posture。
   Weight: 50
   Command: Sp
   Args: {}
+- Id: 7e6f8ef8-c44e-4316-adf5-6e1f397ce976
+  Name: 你参加了火球的绘画班，第二天就没完成作业，被杀鸡儆猴
+  Desc: 获得_num下树脂棍。
+  Weight: 50
+  Command: Num
+  Args:
+    Min: 10
+    Max: 20
 - Id: 61cec9cb-c3b7-4acd-b4be-dd90e1f3c3a8
-  Name: test3
-  Desc: test
+  Name: linu希望你能学习GGggg进行一次请罚
+  Desc: 向主请求使用_tool并使用_posture姿势打_num下（请罚词至少80字）。
   Weight: 50
   Command: Sp
   Args: {}
 - Id: 792b55be-947b-4ba4-84e1-d8bb5b6bfdb2
-  Name: test4
-  Desc: test
+  Name: Virtuoso又瞒着姐姐熬夜打游戏被发现了，现在把你拉去顶包
+  Desc: 获得_num下小绿。
+  Weight: 50
+  Command: Num
+  Args: 
+    Min: 10
+    Max: 20
+- Id: 9dfd8a83-f86b-441c-966a-8478a6eaeb2c
+  Name: 尼小诺咕咕咕了，并把责任推到你身上
+  Desc: 获得_num下藤条。
+  Weight: 50
+  Command: Num
+  Args: 
+    Min: 10
+    Max: 20
+- Id: 79a04084-2971-4c45-ae8c-439ba0f3743d
+  Name: NetSapnker成功举办了运动会
+  Desc: 你姐姐报名参加了使用_tool以_posture姿势打_num下的项目。
   Weight: 50
   Command: Sp
   Args: {}
+- Id: 0e2267e5-ed97-4db3-9f60-90bfdc2f61aa
+  Name: 乙凌羽忘记班长交代的任务，把责任推到了你身上
+  Desc: 作为惩罚，你需要按照_posture姿势挨_num下_tool
+  Weight: 50
+  Command: Sp
+  Args: {}
+- Id: cf4ac972-a5fb-4264-988b-a8b60045d6f0
+  Name: 约定好给 Chloe 的配音鸽了，你感到自责
+  Desc: 向主请求_num下_tool。
+  Weight: 50
+  Command: Sp
+  Args: {}
+- Id: 17b0986c-e25a-437a-ba75-ab6785470bcc
+  Name: GGggg晚上又饿了，但是找不到吃的，心情十分烦躁
+  Desc: 于是他决定和你一起使用_tool，按_posture进行_num下DIY。
+  Weight: 100
+  Command: Diy
+  Args: {}
+- Id: f980ed82-317a-4a4e-84ab-e87f96c5f99e
+  Name: zara要和你语音，结果你半路跑了
+  Desc: zara向你姐姐告状并给你预约了_num下小红
+  Weight: 50
+  Command: Num
+  Args: 
+    Min: 20
+    Max: 40
+- Id: 0439a54f-f7f1-4727-adf7-aa5857ea12d5
+  Name: Austin发现你号称减肥却在吃夜宵，决定对你进行督促
+  Desc: 被用_tool打了_num下，挨打时姿势为_posture。
+  Weight: 50
+  Command: Sp
+  Args: {}
+- Id: f7581911-eb11-4b64-b8c2-ced41e272ff4
+  Name: Virtuoso想要多体验下藤条的感觉
+  Desc: 和VV一起接受50下藤条吧！
+  Weight: 50
+  Command: ShowMsg
+  Args: {}
+- Id: 5459d69b-a647-4761-b56b-20054a56ebea
+  Name: 路过的JayZ为你进行了一次狡辩
+  Desc: 你的主被狡辩打动了，下两次惩罚数目减半。
+  Weight: 50
+  Command: AddEffect
+  Args: 
+    Effect: 本次惩罚数目减半
+    Count: 2
+- Id: 89f1b694-bbed-4c43-87b2-be168a57752c
+  Name: 路过的Genecro把平时积攒的为你加罚的理由告诉了你姐姐
+  Desc: 你的主发现你有这么多错误瞒着她，非常生气，接下来三次惩罚数目乘二。
+  Weight: 50
+  Command: ShowMsg
+  Args: 
+    Effect: 本次惩罚数目乘二
+    Count: 3
