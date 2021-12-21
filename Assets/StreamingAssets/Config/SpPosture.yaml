@@ -3,8 +3,6 @@
   Weight: 50
   Enable: true
   Tag:
-  - sp
-  - diy
   - otk
 - Id: bf198e67-a4b4-477b-859a-83192adc5eb2
   Name: 站立弯腰
@@ -44,3 +42,15 @@
   Enable: true
   Tag:
   - sp
+- Id: 1ac4a444-d46b-4c25-87dd-814fb2de40bf
+  Name: 膝上
+  Weight: 50
+  Enable: true
+  Tag:
+  - otk
+- Id: 4f566f24-7241-4f9e-801f-89965c0d354c
+  Name: 平趴膝上
+  Weight: 50
+  Enable: true
+  Tag:
+  - otk

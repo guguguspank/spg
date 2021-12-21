@@ -1,6 +1,6 @@
 - Id: 6f7887ad-77bb-4f6d-8cb3-95154959ad67
-  Name: 手
-  MinCount: 1
+  Name: 巴掌
+  MinCount: 10
   MaxCount: 32
   Weight: 50
   Enable: true
@@ -22,7 +22,7 @@
 - Id: 21c637aa-bfab-42de-94c3-0e0712c7107a
   Name: 小红
   Desc: 大号
-  MinCount: 1
+  MinCount: 10
   MaxCount: 20
   Weight: 50
   Enable: true
@@ -32,8 +32,40 @@
   - otk
 - Id: 687a396d-c720-45a4-8f3e-3434958a1816
   Name: 小绿
-  MinCount: 20
+  Desc: 普通版
+  MinCount: 15
   MaxCount: 30
+  Weight: 50
+  Enable: true
+  Tag:
+  - sp
+  - diy
+  - otk
+- Id: 3992e471-6b3d-4dd8-805d-6699eb53975f
+  Name: 小绿
+  Desc: 双尾版
+  MinCount: 5
+  MaxCount: 10
+  Weight: 50
+  Enable: true
+  Tag:
+  - sp
+  - diy
+  - otk
+- Id: 71a1c099-d7d3-4a56-b1b8-3494dbabf6b1
+  Name: 小黑
+  MinCount: 5
+  MaxCount: 10
+  Weight: 50
+  Enable: true
+  Tag:
+  - sp
+  - diy
+  - otk
+- Id: 94207412-39a8-4404-b9cb-0bb83d148651
+  Name: 小白
+  MinCount: 5
+  MaxCount: 10
   Weight: 50
   Enable: true
   Tag:
@@ -121,6 +153,40 @@
   Name: 皮带
   MinCount: 10
   MaxCount: 25
+  Weight: 50
+  Enable: true
+  Tag:
+  - sp
+- Id: 7c163098-1e49-41ce-a10f-f5434b7fb929
+  Name: 戒尺
+  Desc: 亚克力
+  MinCount: 20
+  MaxCount: 30
+  Weight: 50
+  Enable: true
+  Tag:
+  - sp
+- Id: 95982a2f-b021-491a-b2d3-113c5e3854b6
+  Name: 板子
+  Desc: 亚克力
+  MinCount: 20
+  MaxCount: 40
+  Weight: 50
+  Enable: true
+  Tag:
+  - sp
+- Id: 2cea0c91-beeb-45b3-9d26-be1cfa0d12b2
+  Name: 散鞭
+  MinCount: 10
+  MaxCount: 35
+  Weight: 50
+  Enable: true
+  Tag:
+  - sp
+- Id: 1c762f2c-ac52-4aec-8329-549ba0508914
+  Name: 亚克力棒
+  MinCount: 15
+  MaxCount: 35
   Weight: 50
   Enable: true
   Tag:

@@ -90,7 +90,93 @@
   Name: 路过的Genecro把平时积攒的为你加罚的理由告诉了你姐姐
   Desc: 你的主发现你有这么多错误瞒着她，非常生气，接下来三次惩罚数目乘二。
   Weight: 50
-  Command: ShowMsg
+  Command: AddEffect
   Args: 
     Effect: 本次惩罚数目乘二
     Count: 3
+- Id: 20cfb9ab-eac8-4b48-8f57-73fc71184019
+  Name: 主决定给你一点奖励
+  Desc: 那就奖励你以_posture姿势挨_num下_tool吧！
+  Weight: 50
+  Command: Otk
+  Args: {}
+- Id: 94019af9-7988-4ac6-b5e7-f14364a7d8bd
+  Name: Genecro认为你需要更多的DIY练习
+  Desc: 使用_tool按照_posture的姿势进行DIY，数量为_num。
+  Weight: 50
+  Command: Diy
+  Args: {}
+- Id: be5fbdcf-23ea-4f87-837f-782971e733f9
+  Name: Netspanker希望你的主能够多多练习藤条的使用技巧
+  Desc: 获得_num下藤条。
+  Weight: 50
+  Command: Num
+  Args: 
+    Min: 10
+    Max: 50
+- Id: 94a4845b-927d-4414-ac78-2669d7b4f6e4
+  Name: Genecro在考前带你去通宵
+  Desc: 第二天你缺考，被处罚选择三件工具，各打60下。
+  Weight: 50
+  Command: ShowMsg
+  Args: {}
+- Id: 5132c61e-7339-471f-af97-06a79909e9fe
+  Name: RK发现你的报数不合格
+  Desc: 主任意选五件工具各打二十下并报数。
+  Weight: 50
+  Command: ShowMsg
+  Args: {}
+- Id: 821b56de-c3ea-48ae-b316-a89073515b34
+  Name: 半夜，你房间里响起了经典的电话铃声，电视也不知道为啥打开了
+  Desc: 贞子姐姐只是想让你以_posture姿势被_tool打_num下
+  Weight: 50
+  Command: Sp
+  Args: {}
+- Id: 5c6a0bd6-9d1b-4c2a-b2a7-06226788d9b0
+  Name: 姐姐看到小说中喜欢的角色被刀了
+  Desc: 姐姐现在想让你以_posture姿势被_tool打_num下
+  Weight: 50
+  Command: Sp
+  Args: {}
+- Id: df66b8e3-b356-4b46-8631-e1c84aaf5241
+  Name: 姐姐想要检查你的手机使用时间
+  Desc: 给姐姐看你的手机使用时长，并获得使用小时数乘以_num下小红
+  Weight: 50
+  Command: Num
+  Args: 
+    Min: 2
+    Max: 5
+- Id: aa255c07-0824-4b6a-acbc-83f364113c39
+  Name: 野生的冰冰路过了，为你留下了一个地刺坐垫
+  Desc: 坐刺垫(硬板凳)_num分钟
+  Weight: 50
+  Command: Num
+  Args: 
+    Min: 10
+    Max: 20
+- Id: 0c979dd5-13ef-48ee-8240-69d7a8ed4047
+  Name: tianger被主威胁这次考试没过关就打死
+  Desc: 为了防止被打死，tianger预先让你帮他分担以_posture挨_num下_tool的惩罚。
+  Weight: 50
+  Command: Sp
+  Args: {}
+- Id: 98b7fe97-9b67-4d4b-89d1-a5babc146e47
+  Name: 萝莉在Roll点时又扔到了最小值，希望你拯救她
+  Desc: 通过QQ/微信等使用骰子表情，若扔出值不为1，则被用_tool打扔出值乘以10下。
+  Weight: 50
+  Command: Sp
+  Args: {}
+- Id: 61c32ddd-bf82-43d3-bc02-b8cba999fe38
+  Name: 路过的尼小诺教了你主一些骚操作
+  Desc: 你将以_posture姿势被_tool打_num下，同时，在打左侧时你需要正向报数，打右侧时需要反向报数，报错则重新计数。
+  Weight: 50
+  Command: Sp
+  Args: {}
+- Id: efb3fccc-6804-43b7-b611-7526d6805396
+  Name: 火球太太送了你的主一个计时沙漏
+  Desc: 接下来_num分钟里，主可以随意发挥。
+  Weight: 50
+  Command: Num
+  Args: 
+    Min: 5
+    Max: 15

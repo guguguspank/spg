@@ -1,34 +1,34 @@
 - Id: 138c4d38-fa3a-4034-b788-0f698cbadcb8
   Name: 前进一格
-  Desc: test
-  Weight: 50
+  Desc: 前进一格
+  Weight: 75
   Command: Move
   Args:
     Step: 1
 - Id: cf667e53-a291-46da-b98c-5a0409a9b423
   Name: 前进两格
-  Desc: test
+  Desc: 前进两格
   Weight: 50
   Command: Move
   Args:
     Step: 2
 - Id: 54868f49-e7a2-4ce3-95c2-dd05e8b3a57e
   Name: 后退一格
-  Desc: test
-  Weight: 50
+  Desc: 后退一格
+  Weight: 75
   Command: Move
   Args:
     Step: -1
 - Id: 03ff2f17-d9c8-4963-a733-a505621792fe
   Name: 后退两格
-  Desc: test
+  Desc: 后退两格
   Weight: 50
   Command: Move
   Args:
     Step: -2
 - Id: 64d5bddc-22c3-4752-87c1-58c56839769a
   Name: 回到起点
-  Desc: test
-  Weight: 50
+  Desc: 回到起点
+  Weight: 25
   Command: BackToStart
   Args: {}
